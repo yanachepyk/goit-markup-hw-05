@@ -102,6 +102,9 @@ header .logo {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    transition-property: color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -133,8 +136,7 @@ header .logo {
 .nav-link:hover,
 .nav-link:focus {
     color: var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-contacts {
@@ -149,13 +151,15 @@ header .logo {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    transition-property: color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts a:hover, 
 .contacts a:focus {
     color: var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .contact-link {
@@ -166,13 +170,15 @@ header .logo {
 
 .contact-icon{
     fill: var(--text-secondary);
+    transition-property: fill;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts a:hover .contact-icon, 
 .contacts a:focus .contact-icon {
     fill: var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .title-hero {
@@ -293,17 +299,22 @@ header .logo {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
     fill: var(--icon-primary);
+    transition-property: fill;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-link:hover .social-icon, 
 .social-link:focus .social-icon {
     fill: var(--text-primary-white);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .subtitle {
@@ -365,9 +376,13 @@ header .logo {
 
 .client-icon {
     fill: var(--icon-primary);
+    transition-property: fill;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.client-logo {
+.client-link {
     border: 1px solid var(--icon-primary);
     border-radius: 4px;
     width: 170px;
@@ -376,20 +391,21 @@ header .logo {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition-property: color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.client-logo:hover .client-icon,
-.client-logo:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
     fill: var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .clients {
@@ -460,8 +476,6 @@ footer .contacts a {
 .social-link:hover,
 .social-link:focus {
     background-color: var(--text-accent);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-item {
@@ -490,6 +504,10 @@ footer .contacts a {
     padding: 6px 22px;
     border-radius: 4px;
     border: 0;
+    transition-property: color, background-color;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .nav-button button:hover, 
@@ -497,8 +515,6 @@ footer .contacts a {
     color: var(--text-primary-white);
     background-color: var(--text-accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -511,14 +527,14 @@ footer .contacts a {
 
 .project-link {
     color: var(--text-primary);
+    transition-property: transform;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects .project-link:hover,
 .projects .project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
 }
 
 .projects h2 {
@@ -566,12 +582,16 @@ footer .contacts a {
     display: block;
 }
 
+.text-wrapper {
+    transition-property: transform;
+    transition-duration:250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .project-link:hover .text-wrapper {
     top: 0;
     left: 0;
     transform: translateY(0%);
-    transition-duration:250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---модалка------ */
@@ -583,15 +603,19 @@ footer .contacts a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; 
 }
 
-.modal {
+.modal { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -601,6 +625,7 @@ footer .contacts a {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    opacity: 1;
 }
 
 .modal-btn {
@@ -616,5 +641,9 @@ footer .contacts a {
    cursor: pointer;
    align-items: center;
 }
+
+
+
+
 
 
